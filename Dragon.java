@@ -17,7 +17,7 @@ public class Dragon extends Enemy
     super();
     hasFire = false;
     this.wingspan = 0;
-  }
+  }//end dragon
 
   //getters
   //Brain Methods
