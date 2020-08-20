@@ -10,7 +10,7 @@ public class Dragon extends Enemy
     super(name, might, isHostile);
     this.hasFire = hasFire;
     this.wingspan = validateWingspan(wingspan);
-  }//end full constructor
+  }//end full constructor dragon
 
   public Dragon()
   {
