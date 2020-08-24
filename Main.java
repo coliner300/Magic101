@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
   public static void main(String[] args) 
   {
@@ -8,7 +10,23 @@ public class Main {
     Monster ogre = new Monster("Geo", 15, true, "air");
     Monster nothing = new Monster();
 
-    Enemy[] enemyList = {happy, nobody, ogre, nothing};
+    System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
+
+    //Creating an arrayList
+
+    ArrayList<Enemy> enemyArrayList = new ArrayList<>();
+    enemyArrayList.add(happy);
+    enemyArrayList.add(nobody);
+    enemyArrayList.add(hello);
+    enemyArrayList.add(ogre);
+    enemyArrayList.add(nothing);
+
+    for(int i = 0; i < enemyArrayList.size(); i++)
+    {
+      System.out.println(enemyArrayList.get(i));
+    }
+
+    //Enemy[] enemyList = {happy, nobody, ogre, nothing};
 
 
     // System.out.println(ogre.mightReact());
@@ -25,7 +43,7 @@ public class Main {
 
     //print out the object via toString
     // System.out.println(happy.toString());
-     System.out.println(nobody.toString());
+    //System.out.println(nobody.toString());
     // System.out.println(hello.toString());
     // System.out.println(ogre.toString());
 
