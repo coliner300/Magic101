@@ -10,7 +10,7 @@ public class Main {
     Slime away = new Slime();
     Monster ogre = new Monster("Geo", 15, true, "air");
     Monster nothing = new Monster();
-    Sorcerer juniper = new Sorcerer("Juniper", true, 20.5, 5);
+    Sorcerer juniper = new Sorcerer("Juniper", true, 20.5, 10);
     Sorcerer invisible = new Sorcerer();
 
     System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
@@ -43,7 +43,9 @@ public class Main {
 
     //Enemy[] enemyList = {happy, nobody, ogre, nothing};
 
-
+    //test brain methods
+    System.out.println();
+    System.out.println(juniper.stylish());
     // System.out.println(ogre.mightReact());
     // System.out.println(nothing.mightReact());
     // System.out.println(ogre.compareTerrain());
