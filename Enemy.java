@@ -42,7 +42,7 @@ public abstract class Enemy
     public void setMight(int might)
     {
         this.might = might;
-    }
+    }//end getMight
 
 
     public String toString()

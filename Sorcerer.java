@@ -13,12 +13,33 @@ public class Sorcerer
     this.pointyHat = pointyHat;
     this.health = health;
     this.might = might;
-  }//end 
-  public 
+  }//end full constructor
+  public Sorcerer()
+  {
+    this.name = null;
+    this.pointyHat = true;
+    this.health = 20.0;
+    this.might = 5;
+  }//end sorcerer
 
   //getters
-
+  public String getName()
+  {
+    return name;
+  }//end getName
+  public int getMight()
+  {
+    return might;
+  }//end getMight
   //setters
+  public void setName(String name)
+  {
+    this.name = name;
+  } //end setname
+  public void setMight(int might)
+  {
+     this.might = might;
+  }//end setMight
 
   //toString
   public String toString()
