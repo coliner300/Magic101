@@ -6,18 +6,21 @@ public class Main {
     //create an object
     Dragon happy = new Dragon("Happy", 20, false, true, 1.2);
     Dragon nobody = new Dragon();
-    Slime hello = new Slime("Goop", 5, false, false);
+    Slime goop = new Slime("Goop", 5, false, false);
     Monster ogre = new Monster("Geo", 15, true, "air");
     Monster nothing = new Monster();
 
     System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
+    System.out.printf("The amount of dragons is how much extra power they have, the dragons have %d extra power! %n%n", Dragon.dragonPower);
+    System.out.printf("The amount of monsters is how much armor they have, the monsters each have %d armor! %n%n", Monster.armorCount);
+
 
     //Creating an arrayList
 
     ArrayList<Enemy> enemyArrayList = new ArrayList<>();
     enemyArrayList.add(happy);
     enemyArrayList.add(nobody);
-    enemyArrayList.add(hello);
+    enemyArrayList.add(goop);
     enemyArrayList.add(ogre);
     enemyArrayList.add(nothing);
 

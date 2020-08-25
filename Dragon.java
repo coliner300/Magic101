@@ -3,6 +3,7 @@ public class Dragon extends Enemy
   //instance variables
   boolean hasFire;
   double wingspan;
+  static int dragonPower = 0;
 
   //constructors
   public Dragon(String name, int might, boolean isHostile, boolean hasFire, double wingspan)
@@ -10,6 +11,7 @@ public class Dragon extends Enemy
     super(name, might, isHostile);
     this.hasFire = hasFire;
     this.wingspan = validateWingspan(wingspan);
+    dragonPower++;
   }//end full constructor dragon
 
   public Dragon()
@@ -17,6 +19,7 @@ public class Dragon extends Enemy
     super();
     hasFire = false;
     this.wingspan = 0;
+    dragonPower++;
   }//end dragon
 
   //getters
