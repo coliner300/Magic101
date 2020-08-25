@@ -11,7 +11,7 @@ public abstract class Enemy
         this.might = might;
         this.isHostile = isHostile;
         countEnemies++;
-    }// end full constructor
+    }// end full constructor Enemy
 
     public Enemy()
     {
@@ -19,7 +19,7 @@ public abstract class Enemy
         this.might = 0;
         this.isHostile = true;
         countEnemies++;
-    }// end full constructor
+    }// end Enemy
 
 
     //getters

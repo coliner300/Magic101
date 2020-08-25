@@ -10,14 +10,14 @@ public class Monster extends Enemy
     super(name, might, isHostile);
     this.terrain = terrain;
     armorCount++;
-  }//end full constructor
+  }//end full constructor Monster
 
   public Monster()
   {
     super();
     terrain = "land";
     armorCount++;
-  }
+  }//end Monster
 
   //brain methods
   public String mightReact()

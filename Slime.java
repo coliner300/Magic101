@@ -10,16 +10,17 @@ public class Slime extends Enemy
     super(name, might, isHostile);
     this.isSolid = isSolid;
     maxSize++;
-  }//end full constructor
+  }//end full constructor Slime
 
   public Slime()
   {
     super();
     isSolid = false;
     maxSize++;
-  }
+  }//end Slime
 
-  //getters
+  //brain methods
+  
 
 
   //toString this is test output method

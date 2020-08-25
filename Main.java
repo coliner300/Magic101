@@ -5,11 +5,12 @@ public class Main {
   {
     //create an object
     Dragon happy = new Dragon("Happy", 20, false, true, 1.2);
-    Dragon nobody = new Dragon();
+    //Dragon nobody = new Dragon();
     Slime goop = new Slime("Goop", 5, false, false);
-    Slime away = new Slime();
+    //Slime away = new Slime();
     Monster ogre = new Monster("Geo", 15, true, "air");
-    Monster nothing = new Monster();
+    //Monster nothing = new Monster();
+    Sorcerer juniper = new Sorcerer("Juniper", true, 1.1, 5);
 
     System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
     System.out.printf("The amount of dragons is how much extra power they have, the dragons have %d extra power! %n%n", Dragon.dragonPower);
@@ -21,11 +22,11 @@ public class Main {
 
     ArrayList<Enemy> enemyArrayList = new ArrayList<>();
     enemyArrayList.add(happy);
-    enemyArrayList.add(nobody);
+    //enemyArrayList.add(nobody);
     enemyArrayList.add(goop);
-    enemyArrayList.add(away);
+    //enemyArrayList.add(away);
     enemyArrayList.add(ogre);
-    enemyArrayList.add(nothing);
+    //enemyArrayList.add(nothing);
 
     for(int i = 0; i < enemyArrayList.size(); i++)
     {
