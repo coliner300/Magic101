@@ -2,18 +2,21 @@ public class Slime extends Enemy
 {
   //instance variables
   boolean isSolid;
+  static int maxSize = 0;
 
   //constructors
   public Slime(String name, int might, boolean isHostile, boolean isSolid)
   {
     super(name, might, isHostile);
     this.isSolid = isSolid;
+    maxSize++;
   }//end full constructor
 
   public Slime()
   {
     super();
     isSolid = false;
+    maxSize++;
   }
 
   //getters
