@@ -43,11 +43,11 @@ public class Sorcerer
     if(wand == true)
     {
       might++;
-      return "You have gained might because of your wand.\nYour might is now: " + might;
+      return "\nYou have gained might because of your wand.\nYour might is now: " + might;
     }//end if
     else
-    {
-      return "You don't have a wand, so you stay at your might.";
+    { 
+      return "\nYou don't have a wand, so you stay at your might.";
     }//end else
   }//end wandDamage
 

@@ -4,13 +4,13 @@ public class Main {
   public static void main(String[] args) 
   {
     //create an object
-    Dragon happy = new Dragon("Happy", 20, false, true, 1.2);
+    Dragon happy = new Dragon("Happy", 20, false, true, 1.2, false, 15);
     Dragon nobody = new Dragon();
     Slime goop = new Slime("Goop", 5, false, false);
     Slime away = new Slime();
     Monster ogre = new Monster("Geo", 15, true, "air");
     Monster nothing = new Monster();
-    Sorcerer juniper = new Sorcerer("Juniper", true, 20.5, 10);
+    Sorcerer juniper = new Sorcerer("Juniper", true, 20.5, 10, true);
     Sorcerer invisible = new Sorcerer();
 
     System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
@@ -46,6 +46,8 @@ public class Main {
     //test brain methods
     System.out.println();
     System.out.println(juniper.stylish());
+    System.out.println(juniper.wandDamage());
+    System.out.println(happy.fireStrengthen());
     // System.out.println(ogre.mightReact());
     // System.out.println(nothing.mightReact());
     // System.out.println(ogre.compareTerrain());

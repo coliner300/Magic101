@@ -20,7 +20,6 @@ public class Slime extends Enemy
   }//end Slime
 
   //brain methods
-  
 
 
   //toString this is test output method
