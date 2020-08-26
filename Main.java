@@ -48,9 +48,10 @@ public class Main {
     System.out.println(juniper.stylish());
     System.out.println(juniper.wandDamage());
     System.out.println(happy.fireStrengthen());
-    // System.out.println(ogre.mightReact());
+    System.out.println(happy.spikeSpeed());
+    System.out.println(ogre.mightReact());
     // System.out.println(nothing.mightReact());
-    // System.out.println(ogre.compareTerrain());
+    System.out.println(ogre.compareTerrain());
     // System.out.println(nothing.compareTerrain());
 
     // System.out.println();

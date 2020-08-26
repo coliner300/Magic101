@@ -24,15 +24,15 @@ public class Monster extends Enemy
   {
     if(might < 10)
     {
-      return "Weak!";
+      return "\nThe monster is Weak!";
     }//end if
     else if(might >= 10 && might < 20)
     {
-      return "Careful";
+      return "\nThe monster is average in strength, Careful";
     }//end else if
     else //(might > 20)
     {
-      return "Whoa!";
+      return "\nThe monster is very strong, you better not fight it!";
     }//end else
   }//end mightReact
 
@@ -40,15 +40,15 @@ public class Monster extends Enemy
   {
     if(terrain.equalsIgnoreCase("land"))
     {
-      return "You can run away";
+      return "\nThe monster is on land, You can run away";
     }//end if
     else if(terrain.equalsIgnoreCase("Water"))
     {
-      return "You can swim away";
+      return "\nThe monster is in the water, You can swim away";
     }//end else if
     else //air animal
     {
-      return "Bummer for you!";
+      return "\nThe monster is in the air, Bummer for you!";
     }//end else
   }//end compareTerrain
 

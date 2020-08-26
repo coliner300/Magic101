@@ -44,9 +44,18 @@ public class Dragon extends Enemy
     }
   }
 
-  public String spikes()
-
-  public 
+  public String spikeSpeed()
+  {
+    if(spikes == true)
+    {
+      speed = speed - 2;
+      return "\nSince the dragon " + name + " has spikes, he is slower due to the extra weight. His new speed is " + speed;
+    }
+    else
+    {
+      return "\nSince the dragon doesn't have spikes, it is the same speed.";
+    }
+  }
 
   //Data Validation
 
