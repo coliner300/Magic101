@@ -38,15 +38,15 @@ public class Main {
     {
       System.out.println(enemyArrayList.get(i));
     }//and for loop enemyArrayList
-    for(int i = 0; i < sorcererArrayList.size(); i++)
+    for(int l = 0; l < sorcererArrayList.size(); l++)
     {
-      System.out.println(sorcererArrayList.get(i));
+      System.out.println(sorcererArrayList.get(l));
     }//end for loop sorcererArrayList
 
     //Enemy[] enemyList = {happy, nobody, ogre, nothing};
 
     //test brain methods
-    System.out.println();
+    System.out.println("\nThese are testing the brain methods in each of the classes.");
     System.out.println(juniper.stylish());
     System.out.println(juniper.wandDamage());
     System.out.println(happy.fireStrengthen());
@@ -66,16 +66,25 @@ public class Main {
     // } //end loop to print out the list of enemies
 
     //print out the object via toString
-    // System.out.println(happy.toString());
-    //System.out.println(nobody.toString());
-    // System.out.println(hello.toString());
-    // System.out.println(ogre.toString());
+    System.out.println("\nThis is printing out the entities without the array.");
+    System.out.println(happy.toString());
+    System.out.println(juniper.toString());
+
 
     // //test getters and setters
-    // happy.setName("Sad");
-    // System.out.println();
-    // System.out.println("Happy is now called " + happy.getName());
-    // System.out.println(happy.toString());
+    System.out.println("\nThis is testing each getter and setter for each entity");
+    happy.setName("Sad");
+    System.out.println("\nHappy is now called " + happy.getName());
+    happy.setMight(20);
+    System.out.println("\nHappy's new might is " + happy.getMight());
+    juniper.setSorcererHealth(7.5);
+    System.out.println("\nJuniper's new health is " + juniper.getSorcererHealth());
+    juniper.setSorcererName("Magnifico");
+    System.out.println("\nThe sorcerers new name is " + juniper.getSorcererName());
+    juniper.setSorcererMight(52);
+    System.out.println("\nThe sorcerers new might is " + juniper.getSorcererMight());
+
+
 
   }//end main method
 }//end driver class

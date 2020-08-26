@@ -30,11 +30,11 @@ public class Sorcerer
   {
     if(pointyHat == true)
     {
-      return "You are now stylish and some monsters may not attack because of your hat.";
+      return "\nYou are now stylish and some monsters may not attack because of your hat.";
     }//end if
     else
     {
-      return "Monsters are more likely to attack because you don't have a stylish hat.";
+      return "\nMonsters are more likely to attack because you don't have a stylish hat.";
     }//end else
   }//end stylish
 
@@ -52,23 +52,31 @@ public class Sorcerer
   }//end wandDamage
 
   //getters
-  public String getName()
+  public String getSorcererName()
   {
     return name;
   }//end getName
-  public int getMight()
+  public int getSorcererMight()
   {
     return might;
   }//end getMight
+  public double getSorcererHealth()
+  {
+    return health;
+  }//end getHealth
   //setters
-  public void setName(String name)
+  public void setSorcererName(String name)
   {
     this.name = name;
   } //end setname
-  public void setMight(int might)
+  public void setSorcererMight(int might)
   {
      this.might = might;
   }//end setMight
+  public void setSorcererHealth(double health)
+  {
+    this.health = health;
+  }//end getHealth
 
   //toString
   public String toString()
