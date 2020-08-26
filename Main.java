@@ -6,14 +6,16 @@ public class Main {
     //create an object
     Dragon happy = new Dragon("Happy", 20, false, true, 1.2, false, 15);
     Dragon nobody = new Dragon();
-    Slime goop = new Slime("Goop", 5, false, false);
+    Slime goop = new Slime("Goop", 5, false, false, "Purple");
     Slime away = new Slime();
     Monster ogre = new Monster("Geo", 15, true, "air");
     Monster nothing = new Monster();
     Sorcerer juniper = new Sorcerer("Juniper", true, 20.5, 10, true);
     Sorcerer invisible = new Sorcerer();
 
-    System.out.printf("Watch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
+    //testing static variables
+    System.out.println("These are testing the static variables in the classes.");
+    System.out.printf("\nWatch out, there are %d enemies attacking! %n%n", Enemy.countEnemies);
     System.out.printf("The amount of dragons is how much extra power they have, the dragons have %d extra power! %n%n", Dragon.dragonPower);
     System.out.printf("The amount of monsters is how much armor they have, the monsters each have %d armor! %n%n", Monster.armorCount);
     System.out.printf("The more slime there are the more they can combine in size, the max slime multiplier is %d! %n%n", Slime.maxSize);
@@ -53,6 +55,8 @@ public class Main {
     // System.out.println(nothing.mightReact());
     System.out.println(ogre.compareTerrain());
     // System.out.println(nothing.compareTerrain());
+    System.out.println(goop.colorMatters());
+    System.out.println(goop.solidOrNot());
 
     // System.out.println();
     // for (Enemy e: enemyList)

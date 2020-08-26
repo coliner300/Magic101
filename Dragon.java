@@ -37,12 +37,12 @@ public class Dragon extends Enemy
     {
       might = might +5;
       return "\nThe strength of the dragon " + name + " has increased due to fire. His new might is " + might;
-    }
+    }//end if
     else
     {
       return "The dragon has not been strengthened because he doesn't have fire.";
-    }
-  }
+    }//end else
+  }//end fireStrengthen
 
   public String spikeSpeed()
   {
@@ -50,12 +50,12 @@ public class Dragon extends Enemy
     {
       speed = speed - 2;
       return "\nSince the dragon " + name + " has spikes, he is slower due to the extra weight. His new speed is " + speed;
-    }
+    }//end if
     else
     {
       return "\nSince the dragon doesn't have spikes, it is the same speed.";
-    }
-  }
+    }//end else
+  }//end spikeSpeed
 
   //Data Validation
 
@@ -65,7 +65,7 @@ public class Dragon extends Enemy
     {
       System.out.println("You can't have negative wings");
       wingspan++; //cheater until Scanner is used
-    }
+    }//end while
 
     return wingspan;
   }//end method validateWingspan
